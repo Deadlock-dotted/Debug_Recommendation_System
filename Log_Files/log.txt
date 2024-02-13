@@ -1,0 +1,53 @@
+Timestamp: 11/9/2022 6:38:42 AM
+Message: <Exception handlingInstanceId="eedc2717-7433-49bb-a696-59b568f9fcff">
+  <Description>An exception of type 'AFS.RefData.CategoryKeyNotFoundException' occurred and was caught.</Description>
+  <DateTime>2022-11-09 01:38:42Z</DateTime>
+  <ExceptionType>AFS.RefData.CategoryKeyNotFoundException, AFS, Version=9.1.0.0, Culture=neutral, PublicKeyToken=e483fc384c0e1885</ExceptionType>
+  <Message>Exception Message Key:RDKEYNF
+Exception Message:No record found in 8036 category for key = IR, Locale = 1033, Filter = Active, and EffectiveDate = 11/9/2022.</Message>
+  <Source>AFS</Source>
+  <HelpLink />
+  <Property name="Parameters">
+[CategoryName] : 8036
+[Key] : IR
+[LocaleId] : 1033
+[Filter] : Active
+[EffectiveDate] : 11/9/2022
+</Property>
+  <Property name="IsMessageRefDataKey">True</Property>
+  <Property name="KeyCategory">ArchErrorMessages</Property>
+  <Property name="IsLogged">False</Property>
+  <Property name="ApplicationVersion">3.001200</Property>
+  <Property name="Data">
+[AFSExceptionID] : 59273224
+[BusinessFunction] :
+[ApplicationFromConfig] : PARTY
+[ApplicationVersionFromConfig] : 3.001200
+</Property>
+  <Property name="TargetSite">System.Collections.Generic.Dictionary`2[System.String,System.Int32] InternalGetRelatedKeys(System.String, System.String, System.String, System.DateTime, AFS.RefData.Filter, Int32)</Property>
+  <Property name="HResult">-2146233088</Property>
+  <StackTrace>   at AFS.RefData.RefDataAccess.InternalGetRelatedKeys(String parentCategoryName, String parentKey, String childCategoryName, DateTime effectiveDate, Filter filter, Int32 localeId) in C:\BuildAgent\work\a04d95d5483567c\AFS\Source\AFS.NET\AFS\RefData\RefDataAccess.cs:line 2200
+   at AFS.RefData.RefDataAccess.GetManyRelatedPartialItems(String parentCategoryName, String parentKey, String childCategoryName, Nullable`1 localeId, Nullable`1 effectiveDate, Nullable`1 filter, Nullable`1 sortBy) in C:\BuildAgent\work\a04d95d5483567c\AFS\Source\AFS.NET\AFS\RefData\RefDataAccess.cs:line 3190</StackTrace>
+  <additionalInfo>
+    <info name="MachineName" value="UEDEV03APP30" />
+    <info name="TimeStamp" value="11/9/2022 6:38:42 AM" />
+    <info name="FullName" value="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <info name="AppDomainName" value="/LM/W3SVC/1/ROOT/Party.WCF-1-133123824278001564" />
+    <info name="ThreadIdentity" value="CKONAPALA" />
+    <info name="WindowsIdentity" value="DEV\BHSI.App.Pool" />
+  </additionalInfo>
+</Exception>
+Category: Architecture
+EventId: 100
+Severity: Verbose
+Title:Enterprise Library Exception Handling
+Machine: UEDEV03APP30
+Application Domain: /LM/W3SVC/1/ROOT/Party.WCF-1-133123824278001564
+Process Id: 378184
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+Win32 Thread Id: 372936
+Thread Name:
+Extended Properties: AFSExceptionID - 59273224
+BusinessFunction -
+ApplicationFromConfig - PARTY
+ApplicationVersionFromConfig - 3.001200
